@@ -18,7 +18,7 @@ bus_platform/
 │   ├── rapido_norte.py              # Empresa A
 │   ├── expresso_brasil.py           # Empresa B
 │   ├── viacao_sol.py                # Empresa C
-│   └── trans_nordeste.py            # Empresa D (Desafio Extra — Regional)
+│   └── regional.py                  # Empresa D (Desafio Extra — Regional)
 ├── services/
 │   └── integracao_service.py        # Orquestrador principal
 ├── utils/
@@ -95,7 +95,7 @@ ausentes. Erros de tipo lançam `TypeError`.
 ============================================================
   Empresas registradas na plataforma
 ============================================================
-  ['rapido_norte', 'expresso_brasil', 'viacao_sol', 'trans_nordeste']
+  ['rapido_norte', 'expresso_brasil', 'viacao_sol', 'regional']
 
 ============================================================
   Empresa A — Viação Rápido Norte
