@@ -57,7 +57,7 @@ def main() -> None:
         ("rapido_norte",    carregar_json("Viação_Rápido_Norte.json"), "Empresa A — Viação Rápido Norte  [JSON externo]"),
         ("expresso_brasil", carregar_json("Expresso_Brasil.json"),     "Empresa B — Expresso Brasil       [JSON externo]"),
         ("viacao_sol",      carregar_json("Viação_Sol.json"),          "Empresa C — Viação Sol            [JSON externo]"),
-        ("trans_nordeste",  PAYLOAD_REGIONAL,                          "Empresa D — Regional              [Desafio Extra]"),
+        ("regional",  PAYLOAD_REGIONAL,                          "Empresa D — Regional              [Desafio Extra]"),
     ]
 
     for chave, payload, descricao in cenarios:
@@ -83,7 +83,7 @@ def main() -> None:
 
     print("\n[3] Payload com tipo errado (não é dict):")
     try:
-        service.converter("rapido_norte", "payload_errado")
+        service.converter("rapido_norte", "payload_errado") # type: ignore
     except TypeError as e:
         print(f"  TypeError capturado → {e}")
 

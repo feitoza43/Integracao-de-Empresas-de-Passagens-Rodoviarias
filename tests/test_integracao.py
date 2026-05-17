@@ -21,7 +21,7 @@ from utils.parsers import parse_datetime, parse_valor, centavos_para_reais
 from adaptadores.rapido_norte import AdaptadorRapidoNorte
 from adaptadores.expresso_brasil import AdaptadorExpressoBrasil
 from adaptadores.viacao_sol import AdaptadorViacaoSol
-from adaptadores.trans_nordeste import AdaptadorTransNordeste
+from adaptadores.regional import AdaptadorTransNordeste
 
 
 class TestAdaptadorRapidoNorte(unittest.TestCase):

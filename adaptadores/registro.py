@@ -57,9 +57,9 @@ class RegistroAdaptadores:
 from adaptadores.rapido_norte import AdaptadorRapidoNorte
 from adaptadores.expresso_brasil import AdaptadorExpressoBrasil
 from adaptadores.viacao_sol import AdaptadorViacaoSol
-from adaptadores.trans_nordeste import AdaptadorTransNordeste  # Desafio Extra
+from adaptadores.regional import AdaptadorRegional  # Desafio Extra
 
 RegistroAdaptadores.registrar("rapido_norte",    AdaptadorRapidoNorte())
 RegistroAdaptadores.registrar("expresso_brasil", AdaptadorExpressoBrasil())
 RegistroAdaptadores.registrar("viacao_sol",      AdaptadorViacaoSol())
-RegistroAdaptadores.registrar("trans_nordeste",  AdaptadorTransNordeste())  # Desafio Extra
+RegistroAdaptadores.registrar("regional",  AdaptadorRegional())  # Desafio Extra

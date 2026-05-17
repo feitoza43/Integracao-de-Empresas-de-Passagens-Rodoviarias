@@ -1,12 +1,12 @@
 """
-Adaptador para a Empresa D — TransNordeste (Desafio Extra).
+Adaptador para a Empresa D — Regional (Desafio Extra).
 
 Demonstra como adicionar uma NOVA empresa sem alterar nenhuma linha
 do código principal (IntegracaoService, main.py, etc.).
 
 Payload fictício da empresa:
 {
-  "transportadora": "TransNordeste",
+  "transportadora": "Regional",
   "partida": {
     "cidade": "Fortaleza",
     "timestamp": "1749560400"          ← Unix timestamp (epoch)
@@ -24,9 +24,9 @@ from adaptadores.base import AdaptadorPassagem
 from models.passagem import Passagem
 
 
-class AdaptadorTransNordeste(AdaptadorPassagem):
+class AdaptadorRegional(AdaptadorPassagem):
     """
-    Converte o formato da TransNordeste para o modelo interno.
+    Converte o formato da Regional para o modelo interno.
 
     Peculiaridades tratadas:
     - horários como Unix timestamp (string);
@@ -36,7 +36,7 @@ class AdaptadorTransNordeste(AdaptadorPassagem):
     _CAMPOS_OBRIGATORIOS = ["transportadora", "partida", "chegada", "tarifa_brl"]
 
     def empresa_suportada(self) -> str:
-        return "trans_nordeste"
+        return "Regional"
 
     def adaptar(self, payload: dict) -> Passagem:
         self._validar_campos(payload, self._CAMPOS_OBRIGATORIOS)
