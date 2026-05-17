@@ -18,7 +18,7 @@ bus_platform/
 │   ├── rapido_norte.py              # Empresa A
 │   ├── expresso_brasil.py           # Empresa B
 │   ├── viacao_sol.py                # Empresa C
-│   └── trans_nordeste.py            # Empresa D (Desafio Extra)
+│   └── trans_nordeste.py            # Empresa D (Desafio Extra — Regional)
 ├── services/
 │   └── integracao_service.py        # Orquestrador principal
 ├── utils/
@@ -101,6 +101,13 @@ ausentes. Erros de tipo lançam `TypeError`.
   Empresa A — Viação Rápido Norte
 ============================================================
   Objeto : Passagem(empresa='Rapido Norte', origem='Fortaleza', destino='Recife', saida='2026-06-10 08:00:00', chegada='2026-06-10 18:30:00', valor=R$199.90)
+
+...
+
+============================================================
+  Empresa D — Regional (Desafio Extra)
+============================================================
+  Objeto : Passagem(empresa='Regional', origem='Fortaleza', destino='Teresina', saida='...', chegada='...', valor=R$189.90)
 
 ...
 
